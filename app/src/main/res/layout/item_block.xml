@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_height="260dp"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/imagenCeldas"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/mytexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+    <LinearLayout
+        android:id="@+id/firstlinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagenCeldas"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_texto1"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:id="@+id/mytexto1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exitos España"
+            android:layout_below="@+id/imagenCeldas"
+            android:paddingTop="10dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/firstlinear">
+        <TextView
+            android:id="@+id/seguidores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3 Seguidores"
+            android:layout_below="@+id/imagenCeldas"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="77dp"
+    android:background="@drawable/equinas_redondeadas"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/firstlinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:id="@+id/imagenCeldaCancion"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_launcher_background"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_play" />
+
+        </FrameLayout>
+        <LinearLayout
+            android:id="@+id/secondLinear"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/mytexto1Cancion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="adios"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/mytexto1Autor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hola"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/secondLinear"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <CheckBox
+                android:id="@+id/corazon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:button="@drawable/ic_corazonsinrelleno"
+                android:buttonTint="@color/white"
+                android:paddingTop="10dp" />
+
+            <CheckBox
+                android:id="@+id/bloqueo"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:button="@drawable/ic_block"
+                android:buttonTint="@color/white"
+                android:paddingTop="10dp" />
+
+            <CheckBox
+                android:id="@+id/opciones"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:button="@drawable/ic_trespuntos"
+                android:buttonTint="@color/white"
+                android:paddingTop="10dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
